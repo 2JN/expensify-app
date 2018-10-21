@@ -8,11 +8,14 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod",
   },
   "author": "Jose Navas",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.4",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
     "react": "^16.0.0",
