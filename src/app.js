@@ -27,7 +27,6 @@ ReactDOM.render(
 
 store.dispatch(startSetExpenses())
   .then(() => {
-    console.log('fuccccccccccccccccccccc')
     ReactDOM.render(
       jsx,
       document.getElementById('app')
